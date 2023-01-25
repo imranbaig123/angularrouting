@@ -1,0 +1,8 @@
+.about-section .section-content {
+    display: flex;
+    align-items: center;
+}
+
+.about-section .section-content img {
+    margin-left: 100px;
+}

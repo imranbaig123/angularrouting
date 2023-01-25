@@ -1,0 +1,23 @@
+input[type="text"],
+textarea {
+    padding: 16px 30px;
+    box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.11);
+    border-radius: 24px;
+    background: #dedede;
+    border: 1px solid black;
+    font-family: "roboto",sans-serif;
+    flex: 1;
+    margin-bottom: 36px;
+}
+
+.contact-section .group {
+    display: flex;
+}
+
+input[type="text"]:nth-of-type(1) {
+    margin-right: 16px;
+}
+
+input[type="text"]:nth-of-type(2) {
+    margin-left: 16px;
+}

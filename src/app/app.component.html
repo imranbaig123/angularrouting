@@ -1,0 +1,27 @@
+<div class="wrapper">
+  <nav class="desktop-nav">
+      <ul class="menu-items">
+          <li [routerLinkActive]="'active'" [routerLinkActiveOptions]="{exact: true}"><a routerLink="Home">Home</a></li>
+          <li [routerLinkActive]="'active'"><a [routerLink]="'About'" class="active">About</a></li>
+          <li [routerLinkActive]="'active'"><a [routerLink]="['Contact']">Contact</a></li>
+          <li [routerLinkActive]="'active'"><a [routerLink]="['Products']">Products</a></li>
+          <span style="float: right">
+            <li (click)="login()"><a>Login</a></li>
+            <li (click)="logout()"><a>Logout</a></li>
+          </span>
+      </ul>
+      <!-- <ul class="menu-items">
+        <li><a href="#Home">Home</a></li>
+        <li><a href="#About">About</a></li>
+        <li><a href="#Contact">Contact</a></li>
+        <li><a href="#Products">Products</a></li>
+    </ul> -->
+  </nav>
+  <div class="component-container">
+    <!-- <app-home id="Home"></app-home>
+    <app-about id="About"></app-about>
+    <app-contact id="Contact"></app-contact>
+    <app-products id="Products"></app-products> -->
+    <router-outlet></router-outlet>
+  </div>
+</div>
